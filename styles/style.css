@@ -1,0 +1,105 @@
+@font-face {
+    font-family: GothamMedium;
+    src: url(/assets/fonts/GothamSSm-Medium_Web.woff2);
+}
+
+@font-face {
+    font-family: GothamSSm;
+    src: url(/assets/fonts/GothamSSm-Book_Web.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+}
+  
+/* Hide scrollbar for IE, Edge add Firefox */
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+}
+
+
+/* logo */
+
+.logo-cont {
+    padding-left: 48px;
+    padding-top: 12px;
+    position: fixed;
+}
+
+.logo-svg {
+    width: 120px;
+    height: 30px;
+    fill: white;
+}
+
+
+
+/* ---------- screen 1 ---------- */
+
+/* header */
+
+.scr1.cont {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* header navbars */
+
+.scr1.navbar-cont {
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+}
+
+.scr1.navbar-cont li {
+    display: inline;
+}
+
+.scr1.navbar-cont a {
+    color: white;
+    text-decoration: none;
+    padding: 0 13px;
+    font-size: 14px;
+    font-family: GothamSSm;
+    font-weight: bold;
+}
+
+.scr1.model-nav {
+    width: 700px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-45% , 18px);
+}
+
+.scr1.main-nav {
+    position: absolute;
+    right: 35px;
+    top: 18px;
+}
+
+
+
+
+/* ---------- screen 2 ---------- */
+
+
+.scr2.cont {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
