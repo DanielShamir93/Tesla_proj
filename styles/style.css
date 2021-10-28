@@ -85,16 +85,16 @@ html {
 }
 
 /* header navbars */
-.scr1.navbar-cont {
+.scr1.top-navbar-cont {
     position: fixed;
     width: 100vw;
 }
 
-.scr1.navbar-cont li {
+.scr1.top-navbar-cont li {
     display: inline;
 }
 
-.scr1.navbar-cont a {
+.scr1.top-navbar-cont a {
     color: white;
     text-decoration: none;
     padding: 0 13px;
@@ -106,8 +106,8 @@ html {
 .scr1.model-nav {
     width: 700px;
     position: absolute;
-    left: 50%;
-    transform: translate(-45%, 18px);
+    left: 53%;
+    transform: translate(-50%, 18px);
 }
 
 .scr1.main-nav {
@@ -115,7 +115,8 @@ html {
     right: 35px;
     top: 18px;
 }
- 
+
+/* main */
 .scr1.title {
     color: white;
     font-family: GothamMedium;
@@ -127,7 +128,43 @@ html {
     transform: translate(-50%, -50%);
 }
 
+/* footer */
+.scr1.footer {
+    position: absolute;
+    height: 100px;
+    background: red;
+    width: 100vw;
+    bottom: 5%;
+}
 
+.scr1.bottom-navbar-cont {
+    position: relative;
+}
+
+.scr1.navbar-footer {
+    position: absolute;
+    left: 50vw;
+    top: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.scr1.footer li {
+    display: inline-block;
+}
+
+.sc1.mph-time {
+    font-family: GothamMedium;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+.sc1.speedometer svg {
+    fill: white;
+}
 
 
 /* ---------- screen 2 ---------- */
