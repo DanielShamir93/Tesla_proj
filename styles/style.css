@@ -25,9 +25,9 @@ html {
     scrollbar-width: none; /* Firefox */
 }
 
+/* ---------- all screens styles ---------- */
 
 /* logo */
-
 .logo-cont {
     padding-left: 48px;
     padding-top: 12px;
@@ -40,12 +40,28 @@ html {
     fill: white;
 }
 
+/* sidebar */
+.aside-bar {
+    position: fixed;
+    top: 50%;
+    transform: translate(13px, -50%);
+}
+
+.aside-bar ul {
+    list-style-type: none;
+}
+
+.aside-bar a {
+    display: inline-block;
+    width: 3px;
+    height: 24px;
+    background: white;
+}
 
 
 /* ---------- screen 1 ---------- */
 
 /* header */
-
 .scr1.cont {
     width: 100vw;
     height: 100vh;
@@ -56,7 +72,6 @@ html {
 }
 
 /* header navbars */
-
 .scr1.navbar-cont {
     position: fixed;
     width: 100vw;
@@ -80,7 +95,7 @@ html {
     width: 700px;
     position: absolute;
     left: 50%;
-    transform: translate(-45% , 18px);
+    transform: translate(-45%, 18px);
 }
 
 .scr1.main-nav {
