@@ -155,22 +155,157 @@
                         </use>
                     </svg>
                 </div>
- 
              </div>
         </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
-
-
-
-
         <!-- scr2 -->
-        <div class="scr2 cont">
 
+        <div class="scr2 cont">
+            <div class="scr2 cont">
+                <div class="scr2 background">
+                    <aside class="scr2 sidebar">
+                        <div class="scr2 sidebar-wrapper">
+                            <ul>
+                                <li>
+                                    <header class="scr2 sidebar-header">
+                                        <h2>
+                                            Safety
+                                        </h2>
+                                        <h1>
+                                            Built for Safety
+                                        </h1>
+                                    </header>
+                                </li>
+                                <li>
+                                    <main class="scr2 safety-content">
+                                        <p>
+                                            Safety is the most important part of the overall Model 3 design. The metal structure is a combination of aluminum and steel, for maximum strength in every area. In a roof-crush test, Model 3 resisted four times its own mass, even with an all-glass roof: that's the same weight as two full-grown African elephants.
+                                        </p>
+                                    </main>
+                                </li>
+                                <li>
+                                    <section class="scr2 rating-box-cont">
+                                        <div class="scr2 rating-box">
+                                            <header class="scr2 rating-box-header">
+                                                <main class="scr2 raiting-box-content">
+                                                    <h3>5-Stars Overall NHTSA Rating</h3>
+                                                    <ul class="scr2 rating-box-lst">
+                                                        <li>
+                                                            <p class="scr2 driver-p" style="float: left">Driver</p>
+                                                            <p style="float: right">★ ★ ★ ★ ★</p>
+                                                            <div class="clr"></div>
+                                                        </li>
+                                                        <li>
+                                                            <p class="scr2 passenger-p" style="float: left">Passenger</p>
+                                                            <p style="float: right">★ ★ ★ ★ ★</p>
+                                                            <div class="clr"></div>
+                                                        </li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </main>
+                                            </header>
+                                        </div>
+                                    </section>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        
+
+
+
+
+
+
+
+
+                    </aside>
+                </div>
+            </div>
         </div>
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </div>  <!-- end wrapper -->
     
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+<script>
+    window.addEventListener("load", () => {
+        window.scrollTo({ top: window.screen.height, behavior: 'smooth' });
+    })
+
+    // show/hide screen 1 top navbars
+    window.addEventListener("scroll", function(e){
+        if (window.scrollY >= window.screen.height - 200) {
+            document.querySelector(".scr1.model-nav").style.visibility = 'hidden';
+            document.querySelector(".scr1.main-nav").style.visibility = 'hidden';
+            document.querySelector(".logo-cont svg").style.fill = 'black';
+        } else {
+            document.querySelector(".scr1.model-nav").style.visibility = 'visible';
+            document.querySelector(".scr1.main-nav").style.visibility = 'visible';
+            document.querySelector(".logo-cont svg").style.fill = 'white';
+        }
+    })
+</script>
+
 </html>

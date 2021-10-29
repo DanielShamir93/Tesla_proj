@@ -27,6 +27,10 @@ html {
 
 /* ---------- all screens styles ---------- */
 
+.clr {
+    clear: both;
+}
+
 ul {
     list-style-type: none;
 }
@@ -69,7 +73,7 @@ ul {
 /* chat button */
 .chat-btn {
     border-radius: 50% 50%;
-    position: absolute;
+    position: fixed;
     right: 40px;
     bottom: 80px;
     border: none;
@@ -78,6 +82,7 @@ ul {
 .chat-btn svg {
     width: 52px;
     height: 52px;
+    fill: white;
 }
 
 /* ---------- screen 1 ---------- */
@@ -86,6 +91,7 @@ ul {
 .scr1.cont {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .scr1.background {
@@ -253,14 +259,85 @@ ul {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---------- screen 2 ---------- */
 
 
 .scr2.cont {
     width: 100vw;
     height: 100vh;
-    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+}
+
+.scr2.sidebar {
+    width: 415px;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.scr2.sidebar-wrapper {
+    width: 315px;
+    height: 100vh;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.scr2.sidebar-header {
+    margin-top: 54px;
+    padding-bottom: 16px;
+}
+
+.scr2.safety-content {
+    padding-bottom: 16px;
+}
+
+.scr2.rating-box-cont {
+    width: 315px;
+    height: 297px;
+    background: #E2E4E4;
+    border-radius: 30px;
+}
+
+.scr2.rating-box {
+    width: 267px;
+    height: 249px;
+    border: 1px solid black;
+}
+
+.scr2.driver-p::after, .scr2.passenger-p::after {
+    content: "\A Frontal";
+    white-space: pre;
+    font-size: 0.8rem;
 }
