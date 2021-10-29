@@ -27,6 +27,10 @@ html {
 
 /* ---------- all screens styles ---------- */
 
+ul {
+    list-style-type: none;
+}
+
 /* logo */
 .logo-cont {
     padding-left: 48px;
@@ -47,13 +51,9 @@ html {
     transform: translate(13px, -47%);
 }
 
-.aside-bar ul {
-    list-style-type: none;
-}
-
 .aside-bar a {
     display: inline-block;
-    width: 1.5px;
+    width: 1px;
     height: 24px;
     background: #a9a6ad;
     opacity: 0.5;
@@ -65,7 +65,6 @@ html {
     background: white;
     opacity: 1;
 }
-
 
 /* ---------- screen 1 ---------- */
 
@@ -131,10 +130,11 @@ html {
 /* footer */
 .scr1.footer {
     position: absolute;
-    height: 100px;
-    background: red;
+    height: 50px;
     width: 100vw;
     bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .scr1.bottom-navbar-cont {
@@ -144,26 +144,90 @@ html {
 .scr1.navbar-footer {
     position: absolute;
     left: 50vw;
-    top: 50px;
+    top: 25px;
     transform: translate(-50%, -50%);
 }
 
-.scr1.footer li {
+
+
+.scr1.navbar-footer > ul > li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.scr1.first-item-footer-navbar li {
     display: inline-block;
 }
 
-.sc1.mph-time {
+.scr1.footer-top-text {
     font-family: GothamMedium;
     font-size: 28px;
     font-weight: bold;
     color: white;
-    letter-spacing: 5px;
+    text-align: center;
 }
 
-/* /////////////////////////////////////////////////////////////////////////// */
+.scr1.footer-bottom-text {
+    font-size: 12px;
+    color: white;
+    font-family: GothamSSm;
+    font-weight: bold;
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
 
-.sc1.speedometer svg {
+.scr1.speedometer-arc svg {
+    position: absolute;
     fill: white;
+    width: 43px;
+    top: 5px;
+    left: 16px;
+}
+
+.scr1.speedometer-back svg {
+    position: absolute;
+    fill: #777D87;
+    width: 30px;
+    top: 13px;
+    left: 22.5px;
+    opacity: 0.6;
+}
+
+.scr1.speedometer-hand svg {
+    position: absolute;
+    fill: white;
+    transform: rotate(90deg);
+    width: 5px;
+    left: 43px;
+    top: 17px;
+}
+
+.scr1.mph-logo {
+    width: 40px;
+    height: 20px;
+}
+
+.scr1.order {
+    position: relative;
+    width: 180px;
+    height: 50px;
+}
+
+.scr1.order-btn {
+    font-family: GothamSSm;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 34px;
+    border: 3px white solid;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 0 35px;
+    position: absolute;
+    top: 0;
 }
 
 
