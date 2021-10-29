@@ -66,6 +66,20 @@ ul {
     opacity: 1;
 }
 
+/* chat button */
+.chat-btn {
+    border-radius: 50% 50%;
+    position: absolute;
+    right: 40px;
+    bottom: 80px;
+    border: none;
+}
+
+.chat-btn svg {
+    width: 52px;
+    height: 52px;
+}
+
 /* ---------- screen 1 ---------- */
 
 /* header */
@@ -133,7 +147,7 @@ ul {
     height: 50px;
     width: 100vw;
     bottom: 5%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%);
 }
 
@@ -228,6 +242,14 @@ ul {
     padding: 0 35px;
     position: absolute;
     top: 0;
+}
+
+.scr1.arrow-down {
+    position: absolute;
+    width: 70px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 
