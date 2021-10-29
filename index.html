@@ -22,11 +22,11 @@
 
         <!-- sidebar -->
 
-        <aside class="aside-bar">
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+        <aside class="sidebar-select-scr">
+            <ul class="sidebar-select-scr-lst">
+                <li><a class="sidebar-select-scr1" href="#"></a></li>
+                <li><a class="sidebar-select-scr2" href="#"></a></li>
+                <li><a class="sidebar-select-scr3" href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
                 <li><a href="#"></a></li>
@@ -202,29 +202,58 @@
                                     <section class="scr2 rating-box-cont">
                                         <div class="scr2 rating-box">
                                             <header class="scr2 rating-box-header">
-                                                <main class="scr2 raiting-box-content">
+                                                <main class="scr2 rating-box-content">
                                                     <h3>5-Stars Overall NHTSA Rating</h3>
                                                     <ul class="scr2 rating-box-lst">
                                                         <li>
-                                                            <p class="scr2 driver-p" style="float: left">Driver</p>
-                                                            <p style="float: right">★ ★ ★ ★ ★</p>
+                                                            <p class="scr2 rating-box-text frontal">Driver</p>
+                                                            <p class="scr2 rating-box-starts">★ ★ ★ ★ ★</p>
                                                             <div class="clr"></div>
                                                         </li>
                                                         <li>
-                                                            <p class="scr2 passenger-p" style="float: left">Passenger</p>
-                                                            <p style="float: right">★ ★ ★ ★ ★</p>
+                                                            <p class="scr2 rating-box-text frontal">Passenger</p>
+                                                            <p class="scr2 rating-box-starts">★ ★ ★ ★ ★</p>
                                                             <div class="clr"></div>
                                                         </li>
-                                                        <li></li>
-                                                        <li></li>
-                                                        <li></li>
+                                                        <li>
+                                                            <p class="scr2 rating-box-text side">Front Seat</p>
+                                                            <p class="scr2 rating-box-starts">★ ★ ★ ★ ★</p>
+                                                            <div class="clr"></div>
+                                                        </li>
+                                                        <li>
+                                                            <p class="scr2 rating-box-text side">Rear Seat</p>
+                                                            <p class="scr2 rating-box-starts">★ ★ ★ ★ ★</p>
+                                                            <div class="clr"></div>
+                                                        </li>
+                                                        <li>
+                                                            <p class="scr2 rating-box-text">Rollover</p>
+                                                            <p class="scr2 rating-box-starts">★ ★ ★ ★ ★</p>
+                                                            <div class="clr"></div>
+                                                        </li>
                                                     </ul>
                                                 </main>
                                             </header>
                                         </div>
                                     </section>
                                 </li>
-                                <li></li>
+                                <li>
+                                    <div class="scr2 sidebar-btns">
+                                        <div class="scr2 sidebar-btn1-cont">
+                                            <button class="scr2 sidebar-btn1">
+                                                <svg width="33px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="#tds-icon-plus">
+                                                        <symbol id="tds-icon-plus" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                                            <g stroke="var(--tds-icon--stroke, #171a20)" stroke-width="1.5" stroke-linecap="round">
+                                                              <line x1="15" y1="10" x2="15" y2="20"></line>
+                                                              <line x1="10" y1="15" x2="20" y2="15"></line>
+                                                            </g>
+                                                          </symbol>
+                                                    </use>
+                                                  </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                         
@@ -295,12 +324,33 @@
     })
 
     // show/hide screen 1 top navbars
-    window.addEventListener("scroll", function(e){
-        if (window.scrollY >= window.screen.height - 200) {
+    window.addEventListener("scroll", function(e) {
+
+        const select_scr1 = document.querySelector('.sidebar-select-scr1');
+        const select_scr2 = document.querySelector('.sidebar-select-scr2');
+
+        if (Math.floor(window.scrollY) >= document.documentElement.clientHeight / 2) {
+            Object.assign(select_scr1.style, {
+                width: '1px',
+                background: '#a9a6ad'
+            })
+            Object.assign(select_scr2.style, {
+                width: '3px',
+                background: 'white'
+            })
             document.querySelector(".scr1.model-nav").style.visibility = 'hidden';
             document.querySelector(".scr1.main-nav").style.visibility = 'hidden';
             document.querySelector(".logo-cont svg").style.fill = 'black';
-        } else {
+            
+        } else if (Math.floor(window.scrollY) < document.documentElement.clientHeight / 2) {
+            Object.assign(select_scr1.style, {
+                width: '3px',
+                background: 'white'
+            })
+            Object.assign(select_scr2.style, {
+                width: '1px',
+                background: '#a9a6ad'
+            })
             document.querySelector(".scr1.model-nav").style.visibility = 'visible';
             document.querySelector(".scr1.main-nav").style.visibility = 'visible';
             document.querySelector(".logo-cont svg").style.fill = 'white';

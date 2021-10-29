@@ -8,6 +8,16 @@
     src: url(/assets/fonts/GothamSSm-Book_Web.woff2);
 }
 
+@font-face {
+    font-family: GothamBold;
+    src: url(/assets/fonts/GothamSSm-Bold_Web.woff2);
+}
+
+@font-face {
+    font-family: GothamLight;
+    src: url(/assets/fonts/GothamSSm-Light_Web.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -49,13 +59,13 @@ ul {
 }
 
 /* sidebar */
-.aside-bar {
+.sidebar-select-scr {
     position: fixed;
     top: 50%;
     transform: translate(13px, -47%);
 }
 
-.aside-bar a {
+.sidebar-select-scr a {
     display: inline-block;
     width: 1px;
     height: 24px;
@@ -64,7 +74,7 @@ ul {
     margin: 1px 0;
 }
 
-.aside-bar ul li:first-child a {
+.sidebar-select-scr1 {
     width: 3px;
     background: white;
     opacity: 1;
@@ -82,7 +92,6 @@ ul {
 .chat-btn svg {
     width: 52px;
     height: 52px;
-    fill: white;
 }
 
 /* ---------- screen 1 ---------- */
@@ -299,8 +308,10 @@ ul {
 .scr2.cont {
     width: 100vw;
     height: 100vh;
+    background: rgb(155, 155, 155);
 }
 
+/* sidebar */
 .scr2.sidebar {
     width: 415px;
     height: 100vh;
@@ -319,8 +330,21 @@ ul {
     padding-bottom: 16px;
 }
 
+.scr2.sidebar-header h2 {
+    font-family: GothamLight;
+    font-size: 17px;
+}
+
+.scr2.sidebar-header h1 {
+    font-family: GothamMedium;
+    font-size: 28px;
+}
+
 .scr2.safety-content {
     padding-bottom: 16px;
+    font-family: GothamSSm;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 .scr2.rating-box-cont {
@@ -328,16 +352,71 @@ ul {
     height: 297px;
     background: #E2E4E4;
     border-radius: 30px;
+    padding: 24px 24px;
 }
 
 .scr2.rating-box {
     width: 267px;
     height: 249px;
-    border: 1px solid black;
 }
 
-.scr2.driver-p::after, .scr2.passenger-p::after {
+.scr2.rating-box-content h3 {
+    font-family: GothamMedium;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 16px;
+}
+
+.scr2.rating-box-text {
+    font-family: GothamBold;
+    font-size: 14px;
+    float: left;
+}
+
+.scr2.rating-box-starts {
+    font-family: GothamMedium;
+    font-size: 17px;
+    float: right;
+}
+
+.scr2.rating-box-text.frontal::after {
     content: "\A Frontal";
     white-space: pre;
-    font-size: 0.8rem;
+    font-size: 8px;
+    font-family: GothamSSm;
+}
+
+.scr2.rating-box-text.side::after {
+    content: "\A Side";
+    white-space: pre;
+    font-family: GothamSSm;
+    font-size: 8px;
+}
+
+
+
+
+.scr2.sidebar-btns {
+    width: 315px;
+    height: 40px;
+    border: 1px solid black;
+    position: relative;
+    margin-top: 500px;
+}
+
+.scr2.sidebar-btns button {
+    border-radius: 50% 50%;
+    background: white;
+    border: 3px solid black;
+}
+
+.sidebar-btn1-cont::after {
+    content: " LEARN MORE";
+    white-space: pre;
+    font-family: GothamSSm;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
 }
