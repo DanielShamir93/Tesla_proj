@@ -65,6 +65,12 @@ ul {
     transform: translate(13px, -47%);
 }
 
+.sidebar-select-scr a:hover::after {
+    white-space: pre;
+    position: absolute;
+    top: 4px;
+}
+
 .sidebar-select-scr a {
     display: inline-block;
     width: 1px;
@@ -72,12 +78,54 @@ ul {
     background: #a9a6ad;
     opacity: 0.5;
     margin: 1px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    font-family: GothamMedium;
+    position: relative;
 }
 
 .sidebar-select-scr1 {
     width: 3px;
-    background: white;
     opacity: 1;
+    background: white;
+}
+
+
+.sidebar-select-scr1:hover::after {
+    content: "   MODEL 3";
+}
+
+.sidebar-select-scr2:hover::after {
+    content: "   SAFETY";
+}
+
+.sidebar-select-scr3:hover::after {
+    content: "   PERFORMANCE";
+}
+
+.sidebar-select-scr4:hover::after {
+    content: "   ALL-WHEEL DRIVE";
+}
+
+.sidebar-select-scr5:hover::after {
+    content: "   RANGE";
+}
+
+.sidebar-select-scr6:hover::after {
+    content: "   AUTOPILOT";
+}
+
+.sidebar-select-scr7:hover::after {
+    content: "   INTERIOR";
+}
+
+.sidebar-select-scr8:hover::after {
+    content: "   SPECS";
+}
+
+.sidebar-select-scr9:hover::after {
+    content: "   ORDER";
 }
 
 /* chat button */
@@ -323,6 +371,7 @@ ul {
     height: 100vh;
     margin: 0 auto;
     border: 1px solid black;
+    position: relative;
 }
 
 .scr2.sidebar-header {
@@ -395,28 +444,42 @@ ul {
 }
 
 
-
-
 .scr2.sidebar-btns {
     width: 315px;
     height: 40px;
     border: 1px solid black;
-    position: relative;
-    margin-top: 500px;
+    position: absolute;
+    bottom: 0;
 }
 
-.scr2.sidebar-btns button {
+.scr2.sidebar-btn1 {
     border-radius: 50% 50%;
     background: white;
     border: 3px solid black;
+    float: left;
 }
 
-.sidebar-btn1-cont::after {
+.scr2.sidebar-btn1::after {
     content: " LEARN MORE";
     white-space: pre;
     font-family: GothamSSm;
     font-size: 12px;
     position: absolute;
-    top: 10px;
+    top: 12px;
     left: 40px;
+}
+
+.scr2.sidebar-btn2 {
+    float: right;
+    width: 138px;
+    height: 40px;
+    font-family: GothamSSm;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 34px;
+    border: 3px black solid;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 0 15px;
 }
