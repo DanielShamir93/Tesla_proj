@@ -326,7 +326,6 @@ ul {
     width: 415px;
     height: 100vh;
     float: left;
-    
 }
 
 .scr2.sidebar-wrapper {
@@ -471,3 +470,22 @@ ul {
 
 /* ---------- screen 3 ---------- */
 
+.scr3.cont {
+    width: 100vw;
+    height: 100vh;
+    background: gray;
+    overflow: hidden;
+}
+
+.scr3.car-view-cont {
+    
+}
+
+.scr3.car-view {
+    width: 100vw;
+    height: 75vh;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/3489a82e-b19c-457a-86a4-7ea9ac91aa1c/bvlatuR/std/1920x1080/lhd-performance-hero-desktop);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
