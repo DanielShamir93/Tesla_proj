@@ -364,6 +364,8 @@ ul {
     width: 415px;
     height: 100vh;
     border: 1px solid black;
+    float: left;
+    
 }
 
 .scr2.sidebar-wrapper {
@@ -443,7 +445,6 @@ ul {
     font-size: 8px;
 }
 
-
 .scr2.sidebar-btns {
     width: 315px;
     height: 40px;
@@ -482,4 +483,19 @@ ul {
     border-radius: 50px;
     font-weight: bold;
     padding: 0 15px;
+}
+
+
+/* car view */
+
+
+.scr2.car-view {
+    overflow: hidden;
+}
+
+.scr2.car-view img {
+    width: calc(100vw - 415px);
+    height: 100vh;
+    margin-left: -200px;
+    z-index: -1;
 }
