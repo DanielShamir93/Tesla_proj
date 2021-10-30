@@ -356,14 +356,12 @@ ul {
 .scr2.cont {
     width: 100vw;
     height: 100vh;
-    background: rgb(155, 155, 155);
 }
 
 /* sidebar */
 .scr2.sidebar {
     width: 415px;
     height: 100vh;
-    border: 1px solid black;
     float: left;
     
 }
@@ -372,7 +370,6 @@ ul {
     width: 315px;
     height: 100vh;
     margin: 0 auto;
-    border: 1px solid black;
     position: relative;
 }
 
