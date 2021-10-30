@@ -65,12 +65,6 @@ ul {
     transform: translate(13px, -47%);
 }
 
-.sidebar-select-scr a:hover::after {
-    white-space: pre;
-    position: absolute;
-    top: 4px;
-}
-
 .sidebar-select-scr a {
     display: inline-block;
     width: 1px;
@@ -91,6 +85,11 @@ ul {
     background: white;
 }
 
+.sidebar-select-scr a:hover::after {
+    white-space: pre;
+    position: absolute;
+    top: 4px;
+}
 
 .sidebar-select-scr1:hover::after {
     content: "   MODEL 3";
@@ -225,8 +224,6 @@ ul {
     transform: translate(-50%, -50%);
 }
 
-
-
 .scr1.navbar-footer > ul > li {
     display: inline-block;
     padding: 0 15px;
@@ -316,46 +313,12 @@ ul {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------- screen 2 ---------- */
-
 
 .scr2.cont {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 /* sidebar */
@@ -445,9 +408,8 @@ ul {
 .scr2.sidebar-btns {
     width: 315px;
     height: 40px;
-    border: 1px solid black;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
 }
 
 .scr2.sidebar-btn1 {
@@ -480,12 +442,10 @@ ul {
     border-radius: 50px;
     font-weight: bold;
     padding: 0 15px;
+    margin-right: 30px;
 }
 
-
 /* car view */
-
-
 .scr2.car-view {
     overflow: hidden;
 }
@@ -496,3 +456,18 @@ ul {
     margin-left: -200px;
     z-index: -1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- screen 3 ---------- */
+
