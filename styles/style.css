@@ -144,6 +144,15 @@ ul {
     height: 52px;
 }
 
+.up-scr-btn {
+    position: fixed;
+    right: 0;
+    background: transparent;
+    border: none;
+    z-index: 1000;
+    padding-right: 24px;
+}
+
 /* ---------- screen 1 ---------- */
 
 /* header */
@@ -568,7 +577,6 @@ ul {
     position: relative;
     width: 100vw;
     height: 25vh;
-    background: pink;
 }
 
 .scr3.footer {

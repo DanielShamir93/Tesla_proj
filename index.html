@@ -49,6 +49,16 @@
             </div>
         </button>
 
+        <button class="up-scr-btn" type="button">
+            <svg width="48px" class="tds-icon tds-icon-arrow tcl-sticky-navigation__icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Jump to top">
+                <use xlink:href="#tds-icon-arrow">
+                    <symbol id="tds-icon-arrow" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="var(--tds-icon--fill, #171a20)" stroke-width="1.5" d="M10.5 17.5l4.5-4 4.5 4" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="rotate(0 15 15)"></path>
+                    </symbol>
+                </use>
+            </svg>
+        </button>
+
         <!-- scr1 -->
 
         <div class="scr1 cont">
@@ -407,10 +417,10 @@
 </body>
 
 <script>
-    window.addEventListener("load", () => {
-        window.scrollTo({ top: document.documentElement.clientHeight * 2, behavior: 'smooth' });
+    // window.addEventListener("load", () => {
+    //     window.scrollTo({ top: document.documentElement.clientHeight * 2, behavior: 'smooth' });
 
-    })
+    // })
 
     // show/hide screen 1 top navbars
     window.addEventListener("scroll", function(e) {
@@ -428,6 +438,7 @@
                 background: 'black'
             })
             document.querySelector(".scr1.model-nav").style.visibility = 'hidden';
+            document.querySelector(".up-scr-btn").style.visibility = 'visible';
             document.querySelector(".scr1.main-nav").style.visibility = 'hidden';
             document.querySelector(".logo-cont svg").style.fill = 'black';
             
@@ -441,6 +452,7 @@
                 background: '#a9a6ad'
             })
             document.querySelector(".scr1.model-nav").style.visibility = 'visible';
+            document.querySelector(".up-scr-btn").style.visibility = 'hidden';
             document.querySelector(".scr1.main-nav").style.visibility = 'visible';
             document.querySelector(".logo-cont svg").style.fill = 'white';
         }
