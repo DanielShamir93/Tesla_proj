@@ -235,22 +235,26 @@
                             </section>
                         </li>
                         <li>
+                            
                             <div class="scr2 sidebar-btns">
                                 <div class="scr2 sidebar-btn1-cont">
-                                    <button class="scr2 sidebar-btn1">
-                                        <svg width="33px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                                            <use xlink:href="#tds-icon-plus">
-                                                <symbol id="tds-icon-plus" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                                                    <g stroke="var(--tds-icon--stroke, #171a20)" stroke-width="1.5" stroke-linecap="round">
-                                                        <line x1="15" y1="10" x2="15" y2="20"></line>
-                                                        <line x1="10" y1="15" x2="20" y2="15"></line>
-                                                    </g>
-                                                </symbol>
-                                            </use>
-                                        </svg>
+                                    <button class="scr2 sidebar-btn1" id="scr2-sidebar-btn1">
+                                        <div class="scr2 sidebar-inner-btn1">
+                                            <svg width="33px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="#tds-icon-plus">
+                                                    <symbol id="tds-icon-plus" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                                        <g stroke="var(--tds-icon--stroke, #171a20)" stroke-width="1.5" stroke-linecap="round">
+                                                            <line x1="15" y1="10" x2="15" y2="20"></line>
+                                                            <line x1="10" y1="15" x2="20" y2="15"></line>
+                                                        </g>
+                                                    </symbol>
+                                                </use>
+                                            </svg>
+                                        </div>
                                     </button>
+                                    <label class="scr2 sidebar-btn1-lbl" for="scr2-sidebar-btn1">LEARN MORE</label>
                                 </div>
-                                <button class="scr2 sidebar-btn2">ORDER NOW</button>
+                                <button class="scr2 sidebar-btn2" onClick="window.open('https://www.tesla.com/en_eu/model3/design','_blank');">ORDER NOW</button>
                                 <div class="clr"></div>
                             </div>
                         </li>
@@ -350,7 +354,7 @@
                         <h1>Quickest Acceleration</h1>
                         <div class="scr3 footer-btns">
                             <div class="scr3 footer-btn1-cont">
-                                <button class="scr3 footer-btn1">
+                                <button class="scr3 footer-btn1" id="scr3-footer-btn1">
                                     <svg width="33px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
                                         <use xlink:href="#tds-icon-plus">
                                             <symbol id="tds-icon-plus" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
@@ -362,6 +366,7 @@
                                         </use>
                                     </svg>
                                 </button>
+                                <label class="scr3 footer-btn1-lbl" for="scr3-footer-btn1">LEARN MORE</label>
                             </div>
                             <button class="scr3 footer-btn2">ORDER NOW</button>
                             <div class="clr"></div>
@@ -417,7 +422,13 @@
 		
 <script>
 
-    window.addEventListener("scroll", function(e) {
+    window.addEventListener('load', e => {
+        window.scrollTo( {
+            top: 0, behavior: 'smooth'
+        })
+    })
+
+    window.addEventListener("scroll", () => {
 
         const select_scr1 = document.querySelector('.sidebar-select-scr1 span');
         const select_scr2 = document.querySelector('.sidebar-select-scr2 span');
@@ -478,7 +489,6 @@
                 s.style.color = 'white';
             }
         }
-
         
     })
 </script>
