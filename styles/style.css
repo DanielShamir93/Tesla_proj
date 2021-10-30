@@ -50,6 +50,7 @@ ul {
     padding-left: 48px;
     padding-top: 12px;
     position: fixed;
+    z-index: 1000;
 }
 
 .logo-svg {
@@ -63,6 +64,7 @@ ul {
     position: fixed;
     top: 50%;
     transform: translate(13px, -47%);
+    z-index: 1000;
 }
 
 .sidebar-select-scr a {
@@ -134,6 +136,7 @@ ul {
     right: 40px;
     bottom: 80px;
     border: none;
+    z-index: 1000
 }
 
 .chat-btn svg {
@@ -252,6 +255,11 @@ ul {
     padding-top: 10px;
 }
 
+.scr1.mph-logo {
+    width: 40px;
+    height: 20px;
+}
+
 .scr1.speedometer-arc svg {
     position: absolute;
     fill: white;
@@ -276,11 +284,6 @@ ul {
     width: 5px;
     left: 43px;
     top: 17px;
-}
-
-.scr1.mph-logo {
-    width: 40px;
-    height: 20px;
 }
 
 .scr1.order {
@@ -473,14 +476,10 @@ ul {
 .scr3.cont {
     width: 100vw;
     height: 100vh;
-    background: gray;
     overflow: hidden;
 }
 
-.scr3.car-view-cont {
-    
-}
-
+/* car view */
 .scr3.car-view {
     width: 100vw;
     height: 75vh;
@@ -488,4 +487,164 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.scr3.car-view-content-cont {
+    position: absolute;
+    width: 100vw;
+    bottom: 115px;
+}
+
+.scr3.car-view-content {
+    position: absolute;
+    left: 50%;
+    width: 1050px;
+    transform: translate(-48%, -50%);
+}
+
+
+.scr3.car-view-content > ul > li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.scr3.first-item-car-view li {
+    display: inline-block;
+}
+
+.scr3.car-view-top-text {
+    font-family: GothamMedium;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-left: 95px;
+}
+
+.scr3.car-view-bottom-text {
+    font-size: 12px;
+    color: white;
+    font-family: GothamSSm;
+    font-weight: bold;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.scr3.mph-logo {
+    width: 40px;
+    height: 20px;
+}
+
+.scr3.speedometer-arc svg {
+    position: absolute;
+    fill: white;
+    width: 43px;
+    top: 5px;
+    left: 111px;
+}
+
+.scr3.speedometer-back svg {
+    position: absolute;
+    fill: #777D87;
+    width: 30px;
+    top: 13px;
+    left: 117.5px;
+    opacity: 0.6;
+}
+
+.scr3.speedometer-hand svg {
+    position: absolute;
+    fill: white;
+    transform: rotate(90deg);
+    width: 5px;
+    left: 138px;
+    top: 17px;
+}
+
+/* footer */
+.scr3.footer-cont {
+    position: relative;
+    width: 100vw;
+    height: 25vh;
+    background: pink;
+}
+
+.scr3.footer {
+    position: absolute;
+    left: 50vw;
+    top: 40px;
+    transform: translate(-50%, 0);
+    float: left;
+}
+
+.scr3.footer-interactive {
+    float: left;
+    width: 351px;
+    height: 217px;
+    margin-right: 10px;
+}
+
+.scr3.footer-interactive h2 {
+    font-family: GothamLight;
+    font-size: 17px;
+}
+
+.scr3.footer-interactive h1 {
+    font-family: GothamMedium;
+    font-size: 28px;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.scr3.footer-btns {
+    width: 315px;
+    height: 40px;
+    position: relative;
+}
+
+.scr3.footer-btn1 {
+    border-radius: 50% 50%;
+    background: white;
+    border: 3px solid black;
+    float: left;
+}
+
+.scr3.footer-btn1::after {
+    content: " LEARN MORE";
+    white-space: pre;
+    font-family: GothamSSm;
+    font-size: 12px;
+    position: absolute;
+    top: 12px;
+    left: 40px;
+}
+
+.scr3.footer-btn2 {
+    float: right;
+    width: 138px;
+    height: 40px;
+    font-family: GothamSSm;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 34px;
+    border: 3px black solid;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 0 15px;
+    margin-right: 30px;
+}
+
+.scr3.footer-content {
+    float: right;
+    width: 624px;
+    height: 121px;
+    line-height: 22px;
+}
+
+.scr3.footer-content p {
+    font-family: GothamSSm;
+    font-size: 14px;
 }
